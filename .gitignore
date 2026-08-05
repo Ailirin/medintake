@@ -1,0 +1,20 @@
+# Секреты и локальные настройки
+.env
+
+# Виртуальное окружение Python
+venv/
+
+# Кэш байткода Python
+__pycache__/
+*.py[cod]
+
+# Кэш pytest
+.pytest_cache/
+
+# Настройки IDE
+.vscode/
+.idea/
+
+# Сгенерированные отчёты
+report.json
+report.csv

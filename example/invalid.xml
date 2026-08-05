@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Пример документа с намеренными ошибками для тестирования валидатора:
+  - Gender: недопустимое значение X
+  - Snils: неверный формат (нет контрольных цифр)
+  - Icd10Code: неверный формат кода МКБ-10
+-->
+<MedicalDocument version="1.0">
+  <DocumentId>DOC-2024-002</DocumentId>
+  <DocumentDate>2024-06-15</DocumentDate>
+  <OrganizationCode>ORG-001</OrganizationCode>
+  <Patient>
+    <LastName>Иванов</LastName>
+    <FirstName>Иван</FirstName>
+    <MiddleName>Иванович</MiddleName>
+    <BirthDate>1985-03-20</BirthDate>
+    <Gender>X</Gender>
+    <Snils>112-233-445</Snils>
+  </Patient>
+  <Diagnosis>
+    <Icd10Code>9.9</Icd10Code>
+    <Description>Острая инфекция верхних дыхательных путей</Description>
+    <IsPrimary>true</IsPrimary>
+  </Diagnosis>
+</MedicalDocument>

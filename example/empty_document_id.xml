@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Пример: XSD пройдёт, но DocumentId пустой — поймает бизнес-правило -->
+<MedicalDocument version="1.0">
+  <DocumentId></DocumentId>
+  <DocumentDate>2024-06-15</DocumentDate>
+  <OrganizationCode>ORG-001</OrganizationCode>
+  <Patient>
+    <LastName>Иванов</LastName>
+    <FirstName>Иван</FirstName>
+    <BirthDate>1985-03-20</BirthDate>
+    <Gender>M</Gender>
+    <Snils>112-233-445 95</Snils>
+  </Patient>
+  <Diagnosis>
+    <Icd10Code>J06.9</Icd10Code>
+    <Description>Острая инфекция верхних дыхательных путей</Description>
+    <IsPrimary>true</IsPrimary>
+  </Diagnosis>
+</MedicalDocument>

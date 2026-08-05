@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Дубликат DocumentId для пакетной проверки (пара с duplicate_a.xml) -->
+<MedicalDocument version="1.0">
+  <DocumentId>DOC-DUPLICATE-001</DocumentId>
+  <DocumentDate>2024-07-01</DocumentDate>
+  <OrganizationCode>ORG-002</OrganizationCode>
+  <Patient>
+    <LastName>Сидоров</LastName>
+    <FirstName>Сидор</FirstName>
+    <BirthDate>1975-05-05</BirthDate>
+    <Gender>M</Gender>
+    <Snils>112-233-445 95</Snils>
+  </Patient>
+  <Diagnosis>
+    <Icd10Code>A00</Icd10Code>
+    <Description>Холера</Description>
+    <IsPrimary>true</IsPrimary>
+  </Diagnosis>
+</MedicalDocument>

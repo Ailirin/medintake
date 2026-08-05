@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  XSD-схема медицинского XML-документа.
+  Описывает структуру, обязательные поля и форматы значений.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+  <!-- Пол: только M (мужской) или F (женский) -->
+  <xs:simpleType name="GenderType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="M"/>
+      <xs:enumeration value="F"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Код МКБ-10: буква + 2 цифры, опционально подкатегория, напр. J06.9 -->
+  <xs:simpleType name="Icd10Type">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z][0-9]{2}(\.[0-9]{1,2})?"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- СНИЛС: формат 123-456-789 01 -->
+  <xs:simpleType name="SnilsType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{3}-\d{3}-\d{3} \d{2}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Дата в формате ISO: YYYY-MM-DD -->
+  <xs:simpleType name="DateType">
+    <xs:restriction base="xs:date"/>
+  </xs:simpleType>
+
+  <!-- Блок данных пациента -->
+  <xs:complexType name="PatientType">
+    <xs:sequence>
+      <xs:element name="LastName" type="xs:string"/>
+      <xs:element name="FirstName" type="xs:string"/>
+      <xs:element name="MiddleName" type="xs:string" minOccurs="0"/>
+      <xs:element name="BirthDate" type="DateType"/>
+      <xs:element name="Gender" type="GenderType"/>
+      <xs:element name="Snils" type="SnilsType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Один диагноз по МКБ-10 -->
+  <xs:complexType name="DiagnosisType">
+    <xs:sequence>
+      <xs:element name="Icd10Code" type="Icd10Type"/>
+      <xs:element name="Description" type="xs:string"/>
+      <xs:element name="IsPrimary" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Корневой медицинский документ -->
+  <xs:complexType name="MedicalDocumentType">
+    <xs:sequence>
+      <xs:element name="DocumentId" type="xs:string"/>
+      <xs:element name="DocumentDate" type="DateType"/>
+      <xs:element name="OrganizationCode" type="xs:string"/>
+      <xs:element name="Patient" type="PatientType"/>
+      <xs:element name="Diagnosis" type="DiagnosisType" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="version" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:element name="MedicalDocument" type="MedicalDocumentType"/>
+</xs:schema>
