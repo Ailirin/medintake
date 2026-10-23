@@ -3,6 +3,7 @@
 
 # Виртуальное окружение Python
 venv/
+.venv/
 
 # Кэш байткода Python
 __pycache__/
@@ -11,10 +12,15 @@ __pycache__/
 # Кэш pytest
 .pytest_cache/
 
+# Метаданные сборки
+*.egg-info/
+
 # Настройки IDE
 .vscode/
 .idea/
 
-# Сгенерированные отчёты
+# Состояние сервиса и выгруженные отчёты
+var/
+*.sqlite3
 report.json
 report.csv

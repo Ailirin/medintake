@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicalDocument version="1.1">
+  <DocumentId>DOC-2026-101</DocumentId>
+  <DocumentDate>2026-10-01</DocumentDate>
+  <InsuranceType>OMS</InsuranceType>
+  <InsurerCode>77001</InsurerCode>
+  <PolicyNumber>7700123456789012</PolicyNumber>
+  <OrganizationCode>ORG-001</OrganizationCode>
+  <Patient>
+    <LastName>Иванов</LastName>
+    <FirstName>Иван</FirstName>
+    <MiddleName>Иванович</MiddleName>
+    <BirthDate>1985-03-20</BirthDate>
+    <Gender>M</Gender>
+    <Snils>112-233-445 95</Snils>
+  </Patient>
+  <Diagnosis>
+    <Icd10Code>J06.9</Icd10Code>
+    <Description>Острая инфекция верхних дыхательных путей</Description>
+    <IsPrimary>true</IsPrimary>
+  </Diagnosis>
+</MedicalDocument>

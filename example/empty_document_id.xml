@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Пример: XSD пройдёт, но DocumentId пустой — поймает бизнес-правило -->
-<MedicalDocument version="1.0">
+<MedicalDocument version="1.1">
   <DocumentId></DocumentId>
-  <DocumentDate>2024-06-15</DocumentDate>
+  <DocumentDate>2026-10-01</DocumentDate>
+  <InsuranceType>OMS</InsuranceType>
+  <InsurerCode>77001</InsurerCode>
+  <PolicyNumber>7700123456789012</PolicyNumber>
   <OrganizationCode>ORG-001</OrganizationCode>
   <Patient>
     <LastName>Иванов</LastName>
