@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Дубликат DocumentId для пакетной проверки (пара с duplicate_a.xml) -->
-<MedicalDocument version="1.0">
+<MedicalDocument version="1.1">
   <DocumentId>DOC-DUPLICATE-001</DocumentId>
-  <DocumentDate>2024-07-01</DocumentDate>
-  <OrganizationCode>ORG-002</OrganizationCode>
+  <DocumentDate>2026-10-02</DocumentDate>
+  <InsuranceType>DMS</InsuranceType>
+  <InsurerCode>77008</InsurerCode>
+  <PolicyNumber>DMS-2026-1042</PolicyNumber>
+  <OrganizationCode>ORG-014</OrganizationCode>
   <Patient>
-    <LastName>Сидоров</LastName>
-    <FirstName>Сидор</FirstName>
-    <BirthDate>1975-05-05</BirthDate>
-    <Gender>M</Gender>
-    <Snils>112-233-445 95</Snils>
+    <LastName>Сидорова</LastName>
+    <FirstName>Анна</FirstName>
+    <BirthDate>1992-11-03</BirthDate>
+    <Gender>F</Gender>
+    <Snils>123-456-789 64</Snils>
   </Patient>
   <Diagnosis>
     <Icd10Code>A00</Icd10Code>

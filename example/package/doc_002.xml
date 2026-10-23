@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicalDocument version="1.1">
+  <DocumentId>DOC-2026-102</DocumentId>
+  <DocumentDate>2026-10-01</DocumentDate>
+  <InsuranceType>DMS</InsuranceType>
+  <InsurerCode>77008</InsurerCode>
+  <PolicyNumber>DMS-2026-1042</PolicyNumber>
+  <OrganizationCode>ORG-014</OrganizationCode>
+  <Patient>
+    <LastName>Сидорова</LastName>
+    <FirstName>Анна</FirstName>
+    <BirthDate>1992-11-03</BirthDate>
+    <Gender>F</Gender>
+    <Snils>123-456-789 64</Snils>
+  </Patient>
+  <Diagnosis>
+    <Icd10Code>I10</Icd10Code>
+    <Description>Гипертензивная болезнь</Description>
+    <IsPrimary>true</IsPrimary>
+  </Diagnosis>
+  <Diagnosis>
+    <Icd10Code>E11.9</Icd10Code>
+    <Description>Сахарный диабет 2 типа</Description>
+    <IsPrimary>false</IsPrimary>
+  </Diagnosis>
+</MedicalDocument>

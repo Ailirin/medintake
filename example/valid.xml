@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Пример корректного медицинского XML-документа -->
-<MedicalDocument version="1.0">
-  <DocumentId>DOC-2024-001</DocumentId>
-  <DocumentDate>2024-06-15</DocumentDate>
+<MedicalDocument version="1.1">
+  <DocumentId>DOC-2026-001</DocumentId>
+  <DocumentDate>2026-10-01</DocumentDate>
+  <InsuranceType>OMS</InsuranceType>
+  <InsurerCode>77001</InsurerCode>
+  <PolicyNumber>7700123456789012</PolicyNumber>
   <OrganizationCode>ORG-001</OrganizationCode>
   <Patient>
     <LastName>Иванов</LastName>
